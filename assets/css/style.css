@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:url('../images/eevee.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+h1{
+    text-align: center;
+    color: lightblue;
+}
+
+a{
+    font-size:30px;
+}
+
+p{
+    font-size:30px;
+    color:lightblue;
+    text-align: center;
+}
+
+button{
+    color:lightblue;
+    font-size:25px;
+    display:block;
+    margin:0 auto;
+}
