@@ -30,3 +30,8 @@ button{
     display:block;
     margin:0 auto;
 }
+
+h3{
+    color:lightblue;
+    text-align: center;
+}
