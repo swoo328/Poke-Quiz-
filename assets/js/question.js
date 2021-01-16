@@ -1,22 +1,22 @@
+//question list
 var questionlist = [
     {
-        question: "The first legendary Pokémon, introduced in the Kanto region are Articuno, Zapdos, and",
+        question: "The first legendary Pokémon, introduced in the Kanto region are Articuno, Moltres, and ________ ",
         choices: {
             a: "Mew",
             b: "Lugia",
             c: "Victini",
-            d: "Zaptos",
+            d: "Zaptos"
         },
         correct: "d"
     },
-
     {
         question: "What's the pre-evolution of Gyrados?",
         choices: {
             a: "Magikarp",
             b: "Feebas",
             c: "Tynamo",
-            d: "Remoraid",
+            d: "Remoraid"
         },
         correct: "a"
     },
@@ -26,7 +26,7 @@ var questionlist = [
             a: "Water",
             b: "Electric",
             c: "Fire",
-            d: "Fairy",
+            d: "Fairy"
         },
         correct: "b"
     },
@@ -36,18 +36,17 @@ var questionlist = [
             a: "Jirachi",
             b: "Mew",
             c: "Deoxys",
-            d: "Mespirit",
+            d: "Mespirit"
         },
         correct: "b"
     },
-
     {
-        question: "What does charmander evolved into?",
+        question: "What does Charmander evolved into?",
         choices: {
             a: "Ivysaur",
             b: "Wartortle",
             c: "Charmeleon",
-            d: "Marshtomp",
+            d: "Marshtomp"
         },
         correct: "c"
     },

@@ -16,6 +16,7 @@
     <section>
         <a href = score.html>Scores</a>
         <h3 id ="time"></h3>
+        <h3 id = "scoreCount"></h3>
     </section>
     <section class = "startingPoint">
     <h1>Pokemon Quiz</h1><br>
@@ -27,27 +28,25 @@
     <button id = "start">Start</button>
     </section>
 
-    <div class = "questionaire" id = "questionList">
+    <div class = "questions" id = "questionList">
         <div id = "options" class = "options">
-        <form id = "questionAnswer" class = "hide">
-            <h4 id= "questions" data-question=""></h4>
-            <input type="radio" class="choice" id="answer1" name="choice" data-answer="a">
-            <label id="choiceA" for="answer1"></label><br>
-            <input type="radio" class="choice" id="answer2" name="choice" data-answer="b">
-            <label id="choiceB" for="answer2"></label><br>
-            <input type="radio" class="choice" id="answer3" name="choice" data-answer="c">
-            <label id="choiceC" for="answer3"></label><br>
-            <input type="radio" class="choice" id="answer4" name="choice" data-answer="d">
-            <label id="choiceD" for="answer4"></label><br>
-        </form>
+            <form id="questionAnswer" class="hide">
+                <h4 id="questionTitle" data-question=""></h4>
+                <input type="radio" class="choice" id="answer1" name="choice" data-answer="a">
+                <label id="choiceA" for="ans1"></label><br>
+                <input type="radio" class="choice" id="answer2" name="choice" data-answer="b">
+                <label id="choiceB" for="ans2"></label><br>
+                <input type="radio" class="choice" id="answer3" name="choice" data-answer="c">
+                <label id="choiceC" for="ans3"></label><br>
+                <input type="radio" class="choice" id="answer4" name="choice" data-answer="d">
+                <label id="choiceD" for="ans4"></label><br>
+            </form>
         </div>
     </div>
+  <h3 id = answer></h3>
 
     <script src = assets/js/question.js></script>
     <script src = assets/js/script.js></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
