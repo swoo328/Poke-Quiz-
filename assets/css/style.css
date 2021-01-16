@@ -4,7 +4,7 @@
 }
 
 body{
-    /* background:url('../images/eevee.jpg'); */
+    background:url('../images/eevee.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -24,14 +24,27 @@ p{
     text-align: center;
 }
 
-button{
+h3{
+    color:lightblue;
+    text-align: center;
+}
+/* question css */
+#questionForm{
+    color:lightskyblue;
+    text-align:center;
+    font-size:25px;
+}
+
+/* button css */
+#start{
+    padding:5px;
     color:lightblue;
     font-size:25px;
     display:block;
     margin:0 auto;
+    background-color:blue;
 }
 
-h3{
-    color:lightblue;
-    text-align: center;
+#start:hover{
+    background-color:lightskyblue;
 }
