@@ -13,9 +13,11 @@ h1{
     text-align: center;
     color: lightblue;
 }
-
-a{
-    font-size:30px;
+.score,
+.home,
+.clear
+{
+    font-size: 30px;
 }
 
 p{
@@ -53,11 +55,9 @@ h3{
     padding:8px;
     color:lightblue;
     font-size:25px;
-    display:block;
-    margin:0 auto;
     background-color:blue;
 }
-
+/* display none */
 .cover{
     display:none;
 }

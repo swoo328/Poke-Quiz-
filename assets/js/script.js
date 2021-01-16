@@ -33,7 +33,10 @@ var questionForm = document.querySelector("#questionForm");
 
 //answer
 var answer = document.querySelector("#answer");
-
+var playerName = document.querySelector("#playerName");
+var yourName = document.querySelector("#yourName");
+//submit
+var submitButton = document.querySelector("#submit");
 //To Start
 function start() {
     var quizButton = document.querySelector(".startingPoint");
@@ -105,16 +108,40 @@ function finishGame(){
    time.setAttribute("style", "display: none;");
    answer.setAttribute("style", "display: none;");
    finalResult.textContent = "You score " + score + " points";
+   playerName.removeAttribute("class");
 }
-function finalScore(){
+//final score
+function playerScore(){
+    var inputName = yourName.value.trim();
+    console.log(inputName);
+    // make sure no blank intial submission
+    if (inputName !== "") {
 
+        var highscores = JSON.parse(window.localStorage.getItem("score")) || [];
+        //user input storage format 
+        var inputScore = {
+            score: score,
+            inputName: inputName
+        };
+
+        //adding new scores to array of high scores
+        highscores.push(inputScore);
+        //add high scores to local storage
+        window.localStorage.setItem("score", JSON.stringify(highscores));
+        //change url to scores page
+        window.location.href = "score.html";
+    }
 }
-
-//function calling 
+//start button when click will call start, timer, and outputQuestion function 
 startButton.addEventListener("click", function (event) {
     start();
     timer();
     outputQuestion();
+});
+
+//submit button
+submitButton.addEventListener("click" , function(event){
+    playerScore();
 });
 
 //When you click the choices
@@ -123,7 +150,7 @@ function setChoice(event) {
     userChoice = button.dataset.answer;
     correctAnswer();
 };
-
+//
 answerA.addEventListener("click", setChoice);
 answerB.addEventListener("click", setChoice);
 answerC.addEventListener("click", setChoice);

@@ -14,10 +14,11 @@
 
 <body>
     <section>
-        <a href=score.html>Scores</a>
+        <a href=score.html class = "score">Scores</a>
         <h3 id="time"></h3>
         <h3 id="scoreCount"></h3>
     </section>
+    <!-- Home Page message -->
     <section class="startingPoint">
         <h1>Pokemon Quiz</h1><br>
         <p>
@@ -31,7 +32,6 @@
     <br><br>
     <!-- displays the radio buttons -->
     <div class="questions" id="questionList">
-        <div id="options" class="options">
             <form id="questionForm" class="cover">
                 <h4 id="questionTitle" data-question=""></h4>
                 <input type="radio" class="choice" id="answer1" name="choice" data-answer="a">
@@ -43,17 +43,21 @@
                 <input type="radio" class="choice" id="answer4" name="choice" data-answer="d">
                 <label id="choiceD" for="ans4"></label><br>
             </form>
-        </div>
     </div>
     <h3 id=answer></h3>
     <!-- final score -->
     <h3 id=finalResult></h3>
     <!-- submit button -->
-    <div id="name" class = "cover">
-        <button id=sumbit> Submit</button>
+    <br><br>
+    <div id="playerName" class = "cover">
+        <p>
+            Enter Your Name: <input type = "text" id = "yourName" maxlength="15"/> 
+            <button id=submit> Submit</button>
+        </p>
     </div>
     <script src=assets/js/question.js></script>
     <script src=assets/js/script.js></script>
+    <script src=assets/js/score.js></script>
 </body>
 
 </html>
