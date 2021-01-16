@@ -15,6 +15,7 @@ var startButton = document.querySelector("#start");
 var questionTitle= document.querySelector("#questionTitle");
 var questionList = document.querySelector("#questionList");
 var questionListChoice = document.querySelector("#choices");
+var questionForm = document.querySelector("#questionForm");
 var time = document.querySelector("#time");
 //seconds
 var secondsLeft = 90;
@@ -25,8 +26,9 @@ var userChoice = "";
 var correcChoice = "";
 //score
 var score = 0; 
+//endscreen
 var finalResult = document.querySelector("#finalResult")
-
+//
 var questionForm = document.querySelector("#questionForm");
 
 //answer
@@ -37,6 +39,8 @@ function start() {
     var quizButton = document.querySelector(".startingPoint");
     //takes out the the starting point class when the start button is click
     quizButton.setAttribute("style", "display: none;");
+    //removes the class so we can see the questions and the radio button
+    questionForm.removeAttribute("class");
 }
 
 //Timer 

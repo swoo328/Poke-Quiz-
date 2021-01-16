@@ -29,10 +29,10 @@
     </section>
 
     <br><br>
-
+    <!-- displays the radio buttons -->
     <div class="questions" id="questionList">
         <div id="options" class="options">
-            <form id="questionForm" class="hide">
+            <form id="questionForm" class="cover">
                 <h4 id="questionTitle" data-question=""></h4>
                 <input type="radio" class="choice" id="answer1" name="choice" data-answer="a">
                 <label id="choiceA" for="ans1"></label><br>
@@ -45,9 +45,13 @@
             </form>
         </div>
     </div>
-    <h3 id = answer></h3>
-    <h3 id = finalResult></h3>
-    <button id = sumbit> Submit</button>
+    <h3 id=answer></h3>
+    <!-- final score -->
+    <h3 id=finalResult></h3>
+    <!-- submit button -->
+    <div id="name" class = "cover">
+        <button id=sumbit> Submit</button>
+    </div>
     <script src=assets/js/question.js></script>
     <script src=assets/js/script.js></script>
 </body>

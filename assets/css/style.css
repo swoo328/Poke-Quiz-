@@ -48,3 +48,16 @@ h3{
 #start:hover{
     background-color:lightskyblue;
 }
+
+#sumbit{
+    padding:8px;
+    color:lightblue;
+    font-size:25px;
+    display:block;
+    margin:0 auto;
+    background-color:blue;
+}
+
+.cover{
+    display:none;
+}
