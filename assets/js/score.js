@@ -3,7 +3,7 @@ var highScore = document.querySelector("#highScore");
 //clear button
 var clearButton = document.querySelector("#clearButton");
 
-function displayscores() {
+function displayScore() {
     //parse object of arrays in local storage or else if empty will just be empty
     var getscores = JSON.parse(window.localStorage.getItem("score")) || [];
     //sorts scores in numerical order
@@ -29,4 +29,4 @@ function clearScores() {
 
 clearButton.onclick = clearScores;
 
-displayscores()
+displayScore();
