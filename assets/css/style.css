@@ -13,12 +13,6 @@ h1{
     text-align: center;
     color: lightblue;
 }
-.score,
-.home,
-.clear
-{
-    font-size: 30px;
-}
 
 p{
     font-size:30px;
@@ -30,32 +24,60 @@ h3{
     color:lightblue;
     text-align: center;
 }
-/* question css */
+/* question form css */
 #questionForm{
     color:lightskyblue;
     text-align:center;
     font-size:25px;
 }
 
-/* button css */
+/* start button css */
 #start{
     padding:5px;
     color:lightblue;
     font-size:25px;
     display:block;
     margin:0 auto;
-    background-color:blue;
+    background-color:navy;
 }
 
 #start:hover{
     background-color:lightskyblue;
 }
-
-#sumbit{
+/* submit button css */
+#submit{
     padding:8px;
     color:lightblue;
     font-size:25px;
-    background-color:blue;
+    background-color:midnightblue;
+}
+/* home button css */
+/* home button, score button, and clear button css */
+.score,
+.home,
+.clear
+{
+    text-decoration: none;
+    box-shadow: 3px 4px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:15px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.home:hover,
+.clear:hover,
+.score:hover
+{
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
 }
 /* display none */
 .cover{
