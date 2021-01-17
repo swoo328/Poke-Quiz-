@@ -1,7 +1,7 @@
 # Poke-Quiz
 
 # screenshot
-![](assets/images/
+![](assets/images/pokemon.png)
 
 # github live
 https://swoo328.github.io/Poke-Quiz-/
