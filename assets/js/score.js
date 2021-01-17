@@ -27,6 +27,6 @@ function clearScores() {
     window.location.reload();
 }
 
-clearButton.onclick = clearScores;
+clearButton.onclick = clearScores
 
 displayScore();
